@@ -1,0 +1,6 @@
+#
+# Specify folders to ignore.
+#
+bin/
+obj/
+
