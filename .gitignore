@@ -4,3 +4,8 @@
 bin/
 obj/
 
+#
+# Specify files to ignore.
+#
+local-readme.txt
+
