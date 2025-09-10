@@ -30,7 +30,7 @@ int main
     std::cout << jsonString << std::endl;
 
     // Test the decoder.
-    Json json = getJson(jsonString);
+    json::Json json = json::getJson(jsonString);
 
     for (auto it = json.cbegin(); it != json.cend(); it++)
     {
@@ -39,7 +39,7 @@ int main
 
     if (json.find("param2") != json.cend())
     {
-        std::cout << "The value of param2 is " << getJsonString(json["param2"]) << "." << std::endl;
+        std::cout << "The value of param2 is " << json::getString(json["param2"]) << "." << std::endl;
     }
 
     // Return success.
